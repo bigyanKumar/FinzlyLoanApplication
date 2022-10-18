@@ -1,0 +1,41 @@
+<div class="container" >
+    <div class="mat-elevation-z5">
+        <p class="heading">Genrate Loan</p>
+        <form [formGroup]="form" (ngSubmit)="createLoan()">
+        <div appearance="fill" class="row">
+            <mat-label>Enter your Loan Amount</mat-label>
+            <br>
+            <input type="number" class="col" matInput placeholder="Loan Amount" formControlName="loanAmount"  >
+            <br>
+        </div>
+        <div appearance="fill" class="row">
+                <mat-label>Payment Frequency</mat-label>
+                    <mat-select formControlName="paymentFrequency" matInput class="select">
+                        <mat-option *ngFor="let frequency of PaymentFrequency" [value]="frequency">
+                        {{frequency}}
+                    </mat-option>
+                </mat-select>
+        </div>
+        <div appearance="fill" class="row">
+            <mat-label>Payment Type</mat-label>
+                <mat-select formControlName="paymentType" matInput class="select">
+                    <mat-option *ngFor="let type of PaymentType" [value]="type">
+                    {{type}}
+                </mat-option>
+            </mat-select>
+        </div>
+        <div appearance="fill" class="row">
+            <mat-label>Intrest Rate</mat-label>
+                <mat-select formControlName="intrestRate" matInput class="select"> 
+                    <mat-option *ngFor="let intrest of IntrestRate" [value]="intrest">
+                    {{intrest}}
+                </mat-option>
+            </mat-select>
+        </div>
+          <div class="row">
+            <input class="button" type="Submit" >
+          </div>
+        </form>
+
+    </div>
+</div>

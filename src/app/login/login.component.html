@@ -1,0 +1,25 @@
+
+<div class="container" >
+    <div class="mat-elevation-z5">
+        <p class="heading">Login Form</p>
+        <form [formGroup]="form" (ngSubmit)="loginUser()">
+        <div appearance="fill" class="row">
+            <mat-label>Enter your email</mat-label>
+            <br>
+            <input type="email" class="col" matInput placeholder="pat@example.com" formControlName="email"  >
+            <br>
+        </div>
+        <div appearance="fill" class="row">
+            <mat-label>Enter your password</mat-label>
+            <br>
+            <input type="password" class="col" matInput placeholder="Password" formControlName="password"  >
+            <br>
+        </div>
+          <div class="row">
+            <input class="button" type="Submit" >
+          </div>
+          <div class="row"><a routerLink="signup">New User</a></div>
+        </form>
+
+    </div>
+</div>
