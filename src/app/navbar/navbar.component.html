@@ -1,0 +1,10 @@
+<mat-toolbar color="primary" class="mat-elevation-z5">
+    <span> <mat-icon>eco</mat-icon>Finzly Loan Application</span>
+    <div class="spacer"> </div>
+    <a mat-button routerLink="dashboard">Dashboard</a>
+    <a *ngIf="login" mat-button routerLink="login">Login</a>
+    <a *ngIf="login" mat-button routerLink="signup">Signup</a>
+    <a mat-button color="accent" routerLink="loan">Loan Apply</a>
+    <a mat-raised-button color="warn" (click)="signOut()">SignOut</a>
+  </mat-toolbar>
+
