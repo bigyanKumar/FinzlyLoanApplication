@@ -1,3 +1,10 @@
+<<<<<<< Updated upstream
 node_modules/
 .angular/
 *.logs
+=======
+*.log
+node_modules/
+.angular/
+README.md
+>>>>>>> Stashed changes
