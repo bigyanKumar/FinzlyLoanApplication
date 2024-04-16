@@ -1,4 +1,4 @@
-node_modules/
+AngularUi/node_modules/
 .angular/
 *.logs
 
